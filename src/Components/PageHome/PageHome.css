@@ -1,0 +1,13 @@
+.home .content {
+    display: flex;
+}
+
+.home .left {
+    width: 35vw;
+    height: 35vw;
+}
+
+.home .right {
+    flex-grow: 1;
+    margin-left: 2em;
+}

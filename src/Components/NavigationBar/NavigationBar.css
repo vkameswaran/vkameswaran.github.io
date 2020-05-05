@@ -1,0 +1,23 @@
+.navbar {
+    margin: 2em 0;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.navbar .logo {
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.navbar .navlink {
+    text-align: right;
+    margin-left: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
