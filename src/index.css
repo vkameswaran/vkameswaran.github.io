@@ -1,22 +1,24 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 a {
-  color: black;
+  color: #d43900;
   text-decoration: underline;
 }
 
 img {
+  border: 1px solid black;
   border-radius: 5px;
   object-fit: cover;
   margin-bottom: 1em;
 }
 
 h1 {
+  display: inline-block;
   font-size: 1.6em;
   font-weight: 400;
   padding: 0.5em 0;
@@ -24,9 +26,23 @@ h1 {
 
 p {
   margin-top: 0;
-  line-height: 38px;
+  line-height: 42px;
 }
 
 p span {
   display: block;
+}
+
+/* ----- */
+
+@media only screen and (min-width: 600px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 38px;
+  }
+
 }

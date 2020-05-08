@@ -4,20 +4,54 @@
 
 .navbar nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: baseline;
 }
 
 .navbar .logo {
+    width: 100%;
     margin-right: auto;
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 900;
     text-decoration: underline;
+    color: black;
 }
 
 .navbar .navlink {
-    text-align: right;
-    margin-left: 4rem;
+    width: 100%;
+    text-align: left;
+    margin-top: 1em;
     font-weight: 700;
     text-decoration: none;
+    color: black;
+}
+
+.navbar .navlink.active {
+    color: #d43900;
+}
+
+/* ----- */
+
+@media only screen and (min-width: 600px) {
+
+    .navbar .logo {
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .navbar .logo {
+        width: auto;
+    }
+
+    .navbar .navlink {
+        width: auto;
+        text-align: right;
+        margin-top: 2em;
+        margin-left: 4rem;
+    }
+
 }
