@@ -20,11 +20,13 @@ class PageProjectDetail extends React.Component {
                         <p className="date"><small>{this.props.project.date}</small></p>
                         <p className="description">{this.props.project.longText}</p>
 
-                        {this.props.project.links.map(item =>
-                            <p className="live" key={item.link}>
+                        {this.props.project.links && <p className="links">
+                            {this.props.project.links.map(item =>
+                            <span className="live" key={item.link}>
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">{item.text}</a>
-                            </p>)
-                        }
+                            </span>)}
+                        </p>}
+
                     </span>
                     <img src={this.props.project.image} alt={this.props.project.name} className="right" />
                 </div>

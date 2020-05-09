@@ -35,7 +35,7 @@ class App extends React.Component {
                 name: "JukeBot",
                 suburl: "/jukebot",
                 shortText: "A dancing robot that reacts to music in its surroundings.",
-                longText: "Jukebot was a project I made with Jeff Raghav and Tiffany Yan during Hack&Roll 2017, the annual hackathon at the National University of Singapore. JukeBot is a robot that dances in response to music in its surroundings, and we built it using mBot, an Arduino, and assorted electronics. I personally coded the Arduino to coordinate input and output between the LED matrix and microphone. I also soldered and wired the components. This taught me a lot about the Arduino platform and the associated circuitry, since I had never really worked with these kinds of tools before. We ended up winning the prize for Most Entertaining Hack, and I had a great time!",
+                longText: "Jukebot is a project I made with Jeff Raghav and Tiffany Yan during Hack&Roll 2017, the annual hackathon at the National University of Singapore. JukeBot is a robot that dances in response to music in its surroundings, and we built it using mBot, an Arduino, and assorted electronics. I personally coded the Arduino to coordinate input and output between the LED matrix and microphone. I also soldered and wired the components. This taught me a lot about the Arduino platform and the associated circuitry, since I had never really worked with these kinds of tools before. We ended up winning the prize for Most Entertaining Hack, and I had a great time!",
                 image: "/images/projects/jukebot.jpg",
                 date: "January 2017",
                 sortId: "20170101",
@@ -44,19 +44,22 @@ class App extends React.Component {
                     text: "See this project on Devpost"
                 }],
             },
-            // {
-            //     name: "Stonks",
-            //     suburl: "/stonks",
-            //     shortText: "This is a short description of Project 2.",
-            //     longText: "This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning.",
-            //     image: "/images/projects/stonks.png",
-            //     date: "February 2020",
-            //     sortId: "20200201",
-            //     links: [{
-            //         link: "https://github.com/karkir0003/Stonks",
-            //         text: "See this project on Github"
-            //     }],
-            // },
+            {
+                name: "Stonks",
+                suburl: "/stonks",
+                shortText: "An algorithm that predicts stock prices using social media.",
+                longText: "Stonks is a project I made with Daksh Gupta, Karthik Subramanian, and Wei Xiong Toh during Hacklytics 2020, a data science hackathon at Georgia Tech. We scraped subreddits relevant to particular companies, and also obtained historical stock price data. We then processed this data and trained a machine learning model to predict the stock prices. I personally processed the language data from Reddit into sentiment vectors using SpaCy, and compiled the final training data with Pandas. This was my first time working with language data, and my first time analyzing datasets on such a large scale. I learnt a lot about language processing, and practical real-world data science!",
+                image: "/images/projects/stonks.png",
+                date: "February 2020",
+                sortId: "20200201",
+                links: [{
+                    link: "https://devpost.com/software/stonks-i431j0",
+                    text: "See this project on Devpost"
+                }, {
+                    link: "https://github.com/karkir0003/Stonks",
+                    text: "See our code on Github"
+                }],
+            },
         ]
     }
   }
