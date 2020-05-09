@@ -24,7 +24,7 @@ class PageHome extends React.Component {
                     url: "https://www.linkedin.com/in/vaishant/"
                 },
             ],
-            resumeURL: "http://www.africau.edu/images/default/sample.pdf"
+            resumeURL: ""
         }
     }
 
@@ -36,15 +36,25 @@ class PageHome extends React.Component {
         // TODO: Write the intro text
         return (
             <div className="home">
-                <h1 id="titleText">Lorem ipsum dolor sit amet!</h1>
+                <h1 id="titleText">Hey, I'm Vaishant!</h1>
                 <div className="content">
                     <img src="/images/main.jpeg" alt="Vaishant Kameswaran" className="left" />
                     <span className="right">
-                        <p>Lorem ipsum dolor sit amet consectitur apidiscing. Lorem ipsum dolor sit amet consectitur apidiscing. Lorem ipsum dolor sit amet consectitur apidiscing. Lorem ipsum dolor sit amet consectitur apidiscing.</p>
+
+                        <p>
+                            I'm a first year computer science major at Georgia Tech interested in using technology to
+                            improve lives. I'm currently working on assorted projects, and building up my portfolio.
+                            Feel free to reach out to me!
+                        </p>
+
                         <p>
                             {this.state.socialLinks.map(link => <span key={link.name}>{link.name}: <a href={link.url} target="_blank"  rel="noopener noreferrer">{link.text}</a></span>)}
                         </p>
-                        <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resumé</a>.</p>
+
+                        {this.state.resumeURL
+                            && <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resumé</a>.</p>
+                        }
+
                     </span>
                 </div>
             </div>

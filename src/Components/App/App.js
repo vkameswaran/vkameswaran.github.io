@@ -32,110 +32,31 @@ class App extends React.Component {
         ],
         projects: [
             {
-                name: "Title Which Is Awesome",
-                suburl: "/project1",
-                shortText: "This is a short description of Project 1.",
-                longText: "This is a longer description of Project 1, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 1, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 1, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 1, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 1, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200401",
-                live: "https://www.google.com"
+                name: "JukeBot",
+                suburl: "/jukebot",
+                shortText: "A dancing robot that reacts to music in its surroundings.",
+                longText: "Jukebot was a project I made with Jeff Raghav and Tiffany Yan during Hack&Roll 2017, the annual hackathon at the National University of Singapore. JukeBot is a robot that dances in response to music in its surroundings, and we built it using mBot, an Arduino, and assorted electronics. I personally coded the Arduino to coordinate input and output between the LED matrix and microphone. I also soldered and wired the components. This taught me a lot about the Arduino platform and the associated circuitry, since I had never really worked with these kinds of tools before. We ended up winning the prize for Most Entertaining Hack, and I had a great time!",
+                image: "/images/projects/jukebot.jpg",
+                date: "January 2017",
+                sortId: "20170101",
+                links: [{
+                    link: "https://devpost.com/software/84-jukebot",
+                    text: "See this project on Devpost"
+                }],
             },
-            {
-                name: "Title Which Is Awesome",
-                suburl: "/project2",
-                shortText: "This is a short description of Project 2.",
-                longText: "This is a longer description of Project 2, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200402",
-                live: "https://www.google.com"
-            },
-            {
-                name: "Title Which Is Awesome",
-                suburl: "/project3",
-                shortText: "This is a short description of Project 3.",
-                longText: "This is a longer description of Project 3, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 3, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 3, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 3, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 3, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200403",
-                live: "https://www.google.com"
-            },
-            {
-                name: "Title Which Is Awesome",
-                suburl: "/project6",
-                shortText: "This is a short description of Project 6.",
-                longText: "This is a longer description of Project 6, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 6, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 6, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 6, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 6, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200406",
-                live: "https://www.google.com"
-            },
-            {
-                name: "Title Which Is Awesome",
-                suburl: "/project7",
-                shortText: "This is a short description of Project 7.",
-                longText: "This is a longer description of Project 7, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 7, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 7, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 7, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 7, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200407",
-                live: "https://www.google.com"
-            },
-            {
-                name: "Title Which Is Awesome",
-                suburl: "/project4",
-                shortText: "This is a short description of Project 4.",
-                longText: "This is a longer description of Project 4, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 4, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 4, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 4, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 4, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200404",
-                live: "https://www.google.com"
-            },
-            {
-                name: "Title Which Is Awesome",
-                suburl: "/project5",
-                shortText: "This is a short description of Project 5.",
-                longText: "This is a longer description of Project 5, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 5, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 5, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 5, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning. This is a longer description of Project 5, wherein I go into a lot more detail about the " +
-                    "whole process, along with my personal learning.",
-                image: "/images/main.jpeg",
-                date: "April 2020",
-                sortId: "20200405",
-                live: "https://www.google.com"
-            },
+            // {
+            //     name: "Stonks",
+            //     suburl: "/stonks",
+            //     shortText: "This is a short description of Project 2.",
+            //     longText: "This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning. This is a longer description of Project 2, wherein I go into a lot more detail about the whole process, along with my personal learning.",
+            //     image: "/images/projects/stonks.png",
+            //     date: "February 2020",
+            //     sortId: "20200201",
+            //     links: [{
+            //         link: "https://github.com/karkir0003/Stonks",
+            //         text: "See this project on Github"
+            //     }],
+            // },
         ]
     }
   }

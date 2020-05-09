@@ -10,7 +10,7 @@ class PageProjects extends React.Component {
     render() {
         return (
             <div className="projects">
-                <h1 id="titleText">Projects ipsum dolor sit amet!</h1>
+                <h1 id="titleText">Here are some of my projects!</h1>
                 <div className="projectGrid">
                     {this.props.projects.map(project => (
                         <a href={"/projects" + project.suburl} key={project.sortId}>
