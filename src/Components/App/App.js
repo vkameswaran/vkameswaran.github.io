@@ -35,7 +35,7 @@ class App extends React.Component {
                 name: "JukeBot",
                 suburl: "/jukebot",
                 shortText: "A dancing robot that reacts to music in its surroundings.",
-                longText: "Jukebot is a project I made with Jeff Raghav and Tiffany Yan during Hack&Roll 2017, the annual hackathon at the National University of Singapore. JukeBot is a robot that dances in response to music in its surroundings, and we built it using mBot, an Arduino, and assorted electronics. I personally coded the Arduino to coordinate input and output between the LED matrix and microphone. I also soldered and wired the components. This taught me a lot about the Arduino platform and the associated circuitry, since I had never really worked with these kinds of tools before. We ended up winning the prize for Most Entertaining Hack, and I had a great time!",
+                longText: "Jukebot is a project I made with Jeff Raghav and Tiffany Yan during Hack&Roll 2017, the annual hackathon at the National University of Singapore. JukeBot is a robot that dances in response to music in its surroundings, and we built it using mBot, an Arduino, and assorted electronics. I personally coded the Arduino to coordinate input and output between the LED matrix and the microphone. I also soldered and wired the components. This taught me a lot about the Arduino platform and the associated circuitry since I had never really worked with these kinds of tools before. We ended up winning the prize for Most Entertaining Hack, and I had a great time!",
                 image: "/images/projects/jukebot.jpg",
                 date: "January 2017",
                 sortId: "20170101",
@@ -48,7 +48,7 @@ class App extends React.Component {
                 name: "Stonks",
                 suburl: "/stonks",
                 shortText: "An algorithm that predicts stock prices using social media.",
-                longText: "Stonks is a project I made with Daksh Gupta, Karthik Subramanian, and Wei Xiong Toh during Hacklytics 2020, a data science hackathon at Georgia Tech. We scraped subreddits relevant to particular companies, and also obtained historical stock price data. We then processed this data and trained a machine learning model to predict the stock prices. I personally processed the language data from Reddit into sentiment vectors using SpaCy, and compiled the final training data with Pandas. This was my first time working with language data, and my first time analyzing datasets on such a large scale. I learnt a lot about language processing, and practical real-world data science!",
+                longText: "Stonks is a project I made with Daksh Gupta, Karthik Subramanian, and Wei Xiong Toh during Hacklytics 2020, a data science hackathon at Georgia Tech. We scraped subreddits relevant to particular companies and also obtained historical stock price data. We then processed this data and trained a machine learning model to predict the stock prices. I personally processed the language data from Reddit into sentiment vectors using SpaCy and compiled the final training data with Pandas. This was my first time working with language data, and my first time analyzing datasets on such a large scale. I learned a lot about language processing and practical real-world data science!",
                 image: "/images/projects/stonks.png",
                 date: "February 2020",
                 sortId: "20200201",
@@ -58,6 +58,19 @@ class App extends React.Component {
                 }, {
                     link: "https://github.com/karkir0003/Stonks",
                     text: "See our code on Github"
+                }],
+            },
+            {
+                name: "Shopping Slots",
+                suburl: "/shopping-slots",
+                shortText: "A web app that checks for available grocery delivery slots.",
+                longText: "Shopping Slots is an app I put together after learning about React development on Codecademy. In Singapore, in these uncertain times, it can sometimes be difficult to get groceries delivered, since the availability of delivery slots seems to come and go at random. This app scrapes grocery websites periodically to notify the user when a slot opens up. I originally coded this in Python, but then rewrote it in JavaScript to make it available online. This was the first installable Progressive Web App I made entirely on my own using React, and I learned a lot about JavaScript development through this process.",
+                image: "/images/projects/shoppingslots.png",
+                date: "April 2020",
+                sortId: "20200401",
+                links: [{
+                    link: "https://shoppingslots.surge.sh/",
+                    text: "See this project live"
                 }],
             },
         ]

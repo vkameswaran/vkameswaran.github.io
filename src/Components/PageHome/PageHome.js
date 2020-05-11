@@ -33,7 +33,6 @@ class PageHome extends React.Component {
     }
 
     render() {
-        // TODO: Write the intro text
         return (
             <div className="home">
                 <h1 id="titleText">Hey, I'm Vaishant!</h1>
