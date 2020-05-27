@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavigationBar.css";
+import { Link } from 'react-router-dom';
 
 class NavigationBar extends React.Component {
 
@@ -14,7 +15,7 @@ class NavigationBar extends React.Component {
     handleChange() {
         setTimeout(() => {
             this.setState({
-                current: window.location.pathname
+                current: window.location.hash
             })
         }, 0)
     }
@@ -24,12 +25,12 @@ class NavigationBar extends React.Component {
             <header className="navbar">
                 <nav>
                     {this.props.pages.map(p =>
-                        <a className={p.linkCategory + (this.state.current.includes(p.url) ? " active" : "")}
-                              href={p.url}
+                        <Link className={p.linkCategory + (this.state.current.includes(p.url) ? " active" : "")}
+                              to={p.url}
                               key={p.url}
                               onClick={this.handleChange}>
                             {p.navText}
-                        </a>
+                        </Link>
                     )}
                 </nav>
             </header>

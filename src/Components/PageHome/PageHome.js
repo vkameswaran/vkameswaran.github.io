@@ -1,5 +1,6 @@
 import React from "react";
 import "./PageHome.css";
+import { Helmet } from "react-helmet";
 
 class PageHome extends React.Component {
 
@@ -28,13 +29,13 @@ class PageHome extends React.Component {
         }
     }
 
-    componentDidMount() {
-        document.title = 'Vaishant Kameswaran';
-    }
-
     render() {
         return (
             <div className="home">
+                <Helmet>
+                    <title>Vaishant Kameswaran</title>
+                    <meta name="description" content="A first year computer science major at Georgia Tech interested in using technology to improve lives." />
+                </Helmet>
                 <h1 id="titleText">Hey, I'm Vaishant!</h1>
                 <div className="content">
                     <img src="/images/main.jpeg" alt="Vaishant Kameswaran" className="left" />

@@ -1,18 +1,13 @@
 import React from "react";
 import "./PageError.css";
+import { Redirect } from 'react-router-dom';
 
 class PageError extends React.Component {
 
-    componentDidMount() {
-        document.title = 'Page not found | Vaishant Kameswaran';
-    }
-
     render() {
+        const closestLocation = window.location.hash.substring(1, window.location.hash.lastIndexOf("/"));
         return (
-            <div className="error">
-                <p>This page wasn't found.</p>
-                <p>Go to my <a href="/">homepage</a> or check out some of my <a href="/projects">projects</a>!</p>
-            </div>
+            <Redirect to={closestLocation} />
         );
     }
 }

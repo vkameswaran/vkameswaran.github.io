@@ -1,17 +1,19 @@
 import React from "react";
 import "./PageProjectDetail.css";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 class PageProjectDetail extends React.Component {
-
-    componentDidMount() {
-        document.title = this.props.project.name + ' | Vaishant Kameswaran';
-    }
 
     render() {
         return (
             <div className="project">
+                <Helmet>
+                    <title>{this.props.project.name + ' | Vaishant Kameswaran'}</title>
+                    <meta name="description" content={this.props.project.shortText} />
+                </Helmet>
                 <header>
-                    <a className="backButton" href="/projects" aria-label="Back">←</a>
+                    <Link className="backButton" to="/projects" aria-label="Back">←</Link>
                     <h1 id="titleText">{this.props.project.name}</h1>
                 </header>
                 <div className="content">
