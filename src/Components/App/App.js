@@ -82,7 +82,7 @@ class App extends React.Component {
                 date: "October 2020",
                 sortId: "20201001",
                 links: [{
-                    link: "https://m.me/gtcoursebot",
+                    link: "https://gtcoursebot.surge.sh/",
                     text: "See this project live"
                 }],
             },
