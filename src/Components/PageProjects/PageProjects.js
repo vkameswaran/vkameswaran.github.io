@@ -13,6 +13,7 @@ class PageProjects extends React.Component {
                     <meta name="description" content="Check out a gallery of some of my recent projects." />
                 </Helmet>
                 <h1 id="titleText">Here are some of my projects!</h1>
+                <p>Click to learn more.</p>
                 <div className="projectGrid">
                     {this.props.projects.map(project => (
                         <Link to={"/projects" + project.suburl} key={project.sortId}>

@@ -6,7 +6,6 @@ class PageHome extends React.Component {
 
     constructor(props) {
         super(props);
-        // TODO: Update resumé
         this.state = {
             socialLinks: [
                 {
@@ -34,7 +33,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="A first year computer science major at Georgia Tech interested in using technology to improve lives." />
+                    <meta name="description" content="Vaishant Kameswaran is a second year computer science major at Georgia Tech interested in using technology to improve lives." />
                 </Helmet>
                 <h1 id="titleText">Hey, I'm Vaishant!</h1>
                 <div className="content">
@@ -42,7 +41,7 @@ class PageHome extends React.Component {
                     <span className="right">
 
                         <p>
-                            I'm a first year computer science major at Georgia Tech interested in using technology to
+                            I'm a second year computer science major at Georgia Tech interested in using technology to
                             improve lives. I'm currently working on assorted projects, and building up my portfolio.
                             Feel free to reach out to me!
                         </p>

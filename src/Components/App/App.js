@@ -73,6 +73,19 @@ class App extends React.Component {
                     text: "See this project live"
                 }],
             },
+            {
+                name: "GT CourseBot",
+                suburl: "/coursebot",
+                shortText: "A dialog agent that finds Georgia Tech class prerequisites.",
+                longText: "This project started as a simple Python script that I wrote for myself, but I built it into a full-fledged dialog agent as part of a project for LING 4015. Course prerequisites at Georgia Tech can sometimes be difficult and time-consuming to locate online. However, with CourseBot, users can simply ask for the prerequisites of a Georgia Tech course using natural language, and get results back in a few seconds. The backend was written in Python (FastAPI and BeautifulSoup) and hosted using Heroku, and the dialog agent was developed and trained using Google DialogFlow. This was my first experience building a real-world dialog agent, even with a high-level tool like DialogFlow, meaning I had to learn about intents, entities, and how to establish conversational flows. This also allowed me to practice building and using APIs.\n",
+                image: "/images/projects/coursebot.png",
+                date: "October 2020",
+                sortId: "20201001",
+                links: [{
+                    link: "https://m.me/gtcoursebot",
+                    text: "See this project live"
+                }],
+            },
         ]
     }
   }
