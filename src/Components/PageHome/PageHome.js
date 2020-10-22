@@ -24,7 +24,7 @@ class PageHome extends React.Component {
                     url: "https://www.linkedin.com/in/vaishant/"
                 },
             ],
-            resumeURL: ""
+            resumeURL: "https://drive.google.com/file/d/1yRrg9zmHOTrH-GYLr9qGx2BktefXJ0em/view?usp=sharing"
         }
     }
 
