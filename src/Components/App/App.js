@@ -57,7 +57,7 @@ class App extends React.Component {
                     text: "See this project on Devpost"
                 }, {
                     link: "https://github.com/karkir0003/Stonks",
-                    text: "See our code on Github"
+                    text: "See our code on GitHub"
                 }],
             },
             {
@@ -84,6 +84,19 @@ class App extends React.Component {
                 links: [{
                     link: "https://gtcoursebot.surge.sh/",
                     text: "See this project live"
+                }],
+            },
+            {
+                name: "Movie Suggestions",
+                suburl: "/movie-suggestions",
+                shortText: "A series of short Python scripts to search a movie dataset.",
+                longText: "This project was a small experiment I worked on during the summer of 2020. I found a movie dataset online, and wanted to use it to build something useful and interesting. I wrote a few different scripts to process and search the dataset. Perhaps the most useful feature I created is the ability to enter a movie's name, and return other 'similar' movies, based on the actors and crew members that worked on it. I wrote everything in Python, using the pandas and json packages. This project helped me gain more experience working with pandas, and manipulating datasets in Python.\n",
+                image: "/images/projects/movie_suggestions.png",
+                date: "July 2020",
+                sortId: "20207001",
+                links: [{
+                    link: "https://github.com/vkameswaran/movie_suggestions",
+                    text: "See my code on GitHub"
                 }],
             },
         ]
