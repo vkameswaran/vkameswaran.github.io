@@ -1,36 +1,42 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
-import NavigationBar from "../NavigationBar/NavigationBar";
 import PageHome from "../PageHome/PageHome";
 import PageProjects from "../PageProjects/PageProjects";
 import PageProjectDetail from "../PageProjectDetail/PageProjectDetail";
 import PageError from "../PageError/PageError";
+import PageWork from "../PageWork/PageWork";
 
 class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-        currentPage: "Home",
-        pages: [
-            {
-                name: "Home",
-                linkCategory: "logo",
-                navText: "Vaishant Kameswaran",
-                url: "/",
-                component: PageHome
-            },
-            {
-                name: "Projects",
-                linkCategory: "navlink",
-                navText: "Projects",
-                url: "/projects",
-                component: PageProjects,
-            },
-        ],
-        projects: [
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentPage: "Home",
+            pages: [
+                {
+                    name: "Home",
+                    linkCategory: "navlink",
+                    navText: "Home",
+                    url: "/",
+                    component: PageHome
+                },
+                {
+                    name: "Projects",
+                    linkCategory: "navlink",
+                    navText: "Projects",
+                    url: "/projects",
+                    component: PageProjects,
+                },
+                {
+                    name: "Work",
+                    linkCategory: "navlink",
+                    navText: "Work",
+                    url: "/work",
+                    component: PageWork,
+                },
+            ],
+            projects: [
             {
                 name: "JukeBot",
                 suburl: "/jukebot",
@@ -99,22 +105,67 @@ class App extends React.Component {
                     text: "See my code on GitHub"
                 }],
             },
-        ]
+        ],
+            work: [
+                {
+                    name: "SDE 1 @ Amazon",
+                    sortId: "20210601",
+                    shortText: "This is a short snippet of text describing my roles and responsibilities at Amazon."
+                }
+            ]
+        }
     }
-  }
+
+    transitionOut = async (e) => {
+        e.preventDefault();
+        let url = e.target.attributes["href"].value.substring(2);
+
+        // If we are navigating to the same page, don't do the animation
+        if(this.props.history.location.pathname.substring(1) === url) {
+            return
+        }
+
+        window.scrollTo(0, 0);
+        let pageContents = document.getElementsByTagName("main")[0];
+        pageContents.style.opacity = 0;
+
+        let title = document.getElementsByTagName("h1")[0];
+        for(let i = 0, j = title.innerText.length; i < j; i++) {
+            title.innerText = title.innerText.substring(0, title.innerText.length - 1) || '\xa0';
+            await new Promise(r => setTimeout(r, 500/j));
+        }
+
+        this.props.history.push("/" + url)
+    };
+
+    transitionIn = async (pageHeading) => {
+        let title = document.getElementsByTagName("h1")[0];
+        for(let i = 0, j = pageHeading.length; i <= j; i++) {
+            title.innerText = pageHeading.substring(0, i) || '\xa0';
+            await new Promise(r => setTimeout(r, 500/j));
+        }
+
+        let pageContents = document.getElementsByTagName("main")[0];
+        pageContents.style.opacity = 1
+    };
 
   render() {
-    return (
-        <div className="app">
-          <NavigationBar pages={this.state.pages.filter(p => p.linkCategory !== "none")} />
-          <main>
+      return (
+          <div className="app">
               <Switch>
 
                   {/* Path to pages */}
                   {this.state.pages.map(p =>
                       <Route
                           path={p.url}
-                          render={() => (<p.component projects={(p.name === "Projects") && this.state.projects.sort((p1, p2) => p2.sortId - p1.sortId)} />)}
+                          render={
+                              () => (<p.component
+                                  projects={(p.name === "Projects") && this.state.projects.sort((p1, p2) => p2.sortId - p1.sortId)}
+                                  work={(p.name === "Work") && this.state.work.sort((p1, p2) => p2.sortId - p1.sortId)}
+                                  globalPages={this.state.pages.filter(p => p.linkCategory !== "none")}
+                                  pageTransitionFunction={this.transitionOut}
+                                  transitionIn={this.transitionIn}
+                              />)}
                           exact
                           key={p.name}
                       />)}
@@ -123,7 +174,12 @@ class App extends React.Component {
                   {this.state.projects.map(p =>
                       <Route
                           path={"/projects" + p.suburl}
-                          render={() => <PageProjectDetail project={p} />}
+                          render={() => <PageProjectDetail
+                              project={p}
+                              globalPages={this.state.pages.filter(p => p.linkCategory !== "none")}
+                              pageTransitionFunction={this.transitionOut}
+                              transitionIn={this.transitionIn}
+                          />}
                           exact
                           key={p.name}
                       />)
@@ -133,12 +189,10 @@ class App extends React.Component {
                   <Route component={PageError} />
 
               </Switch>
-          </main>
-
-        </div>
-    );
+          </div>
+      );
   }
 
 }
 
-export default App;
+export default withRouter(App);

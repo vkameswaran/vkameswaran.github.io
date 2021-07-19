@@ -1,13 +1,32 @@
+:root {
+  --animation-speed: 0.25s
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+  color: #555555;
+}
+
+main {
+  opacity: 0;
+  transition: opacity var(--animation-speed);
+  -webkit-transition: opacity var(--animation-speed); /* Safari */
 }
 
 a {
-  color: #d43900;
-  text-decoration: underline;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-decoration: none;
+  padding: 0.2em 0.4em;
+  font-weight: bold;
 }
 
 img {
@@ -20,17 +39,31 @@ img {
 h1 {
   display: inline-block;
   font-size: 1.6em;
-  font-weight: 400;
-  padding: 0.5em 0;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  color: #000000;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+}
+
+.h1tag {
+  display: none;
+  text-align: right;
+}
+
+.h2tag {
+  display: none;
+  text-align: right;
 }
 
 p {
-  margin-top: 0;
-  line-height: 42px;
-}
-
-p span {
-  display: block;
+  padding-bottom: 2.5em;
+  line-height: 32px;
 }
 
 /* ----- */
@@ -41,8 +74,41 @@ p span {
     font-size: 20px;
   }
 
+  h1 {
+    font-size: 2em;
+  }
+
+  .h1tag {
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+    left: -40px;
+  }
+
+  .h2tag {
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    left: -40px;
+  }
+
   p {
-    line-height: 38px;
+    padding-bottom: 3em;
+    line-height: 35px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .h1tag {
+    left: -40px;
+  }
+
+  .h2tag {
+    left: -40px;
   }
 
 }

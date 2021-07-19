@@ -1,39 +1,32 @@
-.project header {
-    display: flex;
+.project {
+    display: inline-block;
 }
 
-.project .backButton {
-    text-decoration: none;
-    font-size: 2em;
-    margin-top: 0.75em;
+.project header {
+
 }
 
 .project h1 {
-    margin-left: 0.5em;
+
 }
 
-.project .content {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: flex-start;
+.project img {
+    margin-bottom: 3em;
+    max-width: 100%;
 }
 
-.project .left {
-    width: 100%;
+.project a {
+    margin-right: 1em;
 }
 
-.project .right {
-    width: 100%;
-    object-fit: contain;
+.project .live {
+    display: inline-block;
+    margin-bottom: 0.5em;
 }
 
 /* ----- */
 
 @media only screen and (min-width: 600px) {
-
-    .project .backButton {
-        margin-left: -1.5em;
-    }
 
 }
 
@@ -41,15 +34,6 @@
 
     .project .content {
         flex-wrap: nowrap;
-    }
-
-    .project .left {
-        width: 50%;
-    }
-
-    .project .right {
-        width: 50%;
-        margin-left: 2em;
     }
 
 }

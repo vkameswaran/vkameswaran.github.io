@@ -1,9 +1,12 @@
 import React from "react";
 import "./PageProjectDetail.css";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import NavigationBar from "../NavigationBar/NavigationBar";
 
 class PageProjectDetail extends React.Component {
+    componentDidMount() {
+        this.props.transitionIn(this.props.project.name)
+    }
 
     render() {
         return (
@@ -12,26 +15,23 @@ class PageProjectDetail extends React.Component {
                     <title>{this.props.project.name + ' | Vaishant Kameswaran'}</title>
                     <meta name="description" content={this.props.project.shortText} />
                 </Helmet>
-                <header>
-                    <Link className="backButton" to="/projects" aria-label="Back">←</Link>
-                    <h1 id="titleText">{this.props.project.name}</h1>
+                <header className="navbar">
+                    <div className="h1tag">#</div>
+                    <h1>&nbsp;</h1>
+                    <NavigationBar pages={this.props.globalPages} pageTransitionFunction={this.props.pageTransitionFunction} />
                 </header>
-                <div className="content">
-                    <span className="left">
+                <main>
+                    <p className="tagline"><strong>{this.props.project.date}</strong>. {this.props.project.shortText}</p>
+                    <img src={this.props.project.image} alt={this.props.project.name} />
+                    <p className="description">{this.props.project.longText}</p>
 
-                        <p className="date"><small>{this.props.project.date}</small></p>
-                        <p className="description">{this.props.project.longText}</p>
-
-                        {this.props.project.links && <p className="links">
-                            {this.props.project.links.map(item =>
-                            <span className="live" key={item.link}>
-                                <a href={item.link} target="_blank" rel="noopener noreferrer">{item.text}</a>
-                            </span>)}
-                        </p>}
-
-                    </span>
-                    <img src={this.props.project.image} alt={this.props.project.name} className="right" />
-                </div>
+                    {this.props.project.links && <p className="links">
+                        {this.props.project.links.map(item =>
+                        <span className="live" key={item.link}>
+                            <a href={item.link} target="_blank" rel="noopener noreferrer">{item.text}</a>
+                        </span>)}
+                    </p>}
+                </main>
             </div>
         );
     }

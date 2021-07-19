@@ -1,13 +1,13 @@
-.projects p {
+.work p {
     /*font-size: 0.8em;*/
 }
 
-.projects .projectInfo {
+.work .workInfo {
     position: relative;
     padding-bottom: 3em;
 }
 
-.projects .projectInfo p {
+.work .workInfo p {
     padding-bottom: 0.5em;
 }
 

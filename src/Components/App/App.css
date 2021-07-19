@@ -1,9 +1,5 @@
 .app {
-  margin: 2em 1.5em;
-}
-
-.app main {
-  margin: 0 0;
+  margin: 2em 1em;
 }
 
 /* ----- */
@@ -11,11 +7,7 @@
 @media only screen and (min-width: 600px) {
 
   .app {
-    margin: 2em 2em;
-  }
-
-  .app main {
-    margin: 0 3em;
+    margin: 4em 4em;
   }
 
 }
@@ -23,7 +15,7 @@
 @media only screen and (min-width: 768px) {
 
   .app {
-    margin: 2em 3em;
+    margin: 10vh 20vw;
   }
 
 }
