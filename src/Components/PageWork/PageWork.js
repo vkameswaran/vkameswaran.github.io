@@ -21,7 +21,12 @@ class PageWork extends React.Component {
                     <NavigationBar pages={this.props.globalPages} pageTransitionFunction={this.props.pageTransitionFunction} />
                 </header>
                 <main>
-                    <p>This is a short introductory paragraph about the work I’ve done in the past, and what kind of work I’m looking to take on and learn more about in the future.</p>
+                    <p>
+                        I have experience in software engineering and data science roles, through various
+                        internships and projects over the years. In my next internships, I aim to gain
+                        exposure to new tools, industries, and technologies, to further broaden my
+                        experiences and knowledge.
+                    </p>
                     {this.props.work.map(workExperience => (
                         <div className="workInfo" key={workExperience.sortId}>
                             <div className="h2tag">##</div>

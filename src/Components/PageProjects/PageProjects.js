@@ -22,7 +22,12 @@ class PageProjects extends React.Component {
                     <NavigationBar pages={this.props.globalPages} pageTransitionFunction={this.props.pageTransitionFunction} />
                 </header>
                 <main>
-                    <p>This is a short introductory paragraph about the motivation and reasoning behind the projects that are featured on this page. What are my goals and processes in creating and sharing these projects?</p>
+                    <p>
+                        These projects are a selection of the things I've made over the years. In each of
+                        my projects, I try to explore new skills and learn about new technologies, in
+                        order to broaden my experiences and continue learning. Click through to read more
+                        about my experiences with each project.
+                    </p>
                     {this.props.projects.map(project => (
                         <div className="projectInfo" key={project.sortId}>
                             <div className="h2tag">##</div>

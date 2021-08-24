@@ -108,9 +108,24 @@ class App extends React.Component {
         ],
             work: [
                 {
-                    name: "SDE 1 @ Amazon",
+                    name: "Data Science Intern @ McLaren Applied Technologies",
+                    sortId: "20170601",
+                    shortText: "Validated, standardized, and formatted client datasets, using Microsoft Excel, to allow further analysis by the data science team. Handled data used in public transport and healthcare research."
+                },
+                {
+                    name: "Undergrad TA @ Georgia Tech",
+                    sortId: "20200501",
+                    shortText: "TA for Data Structures and Algorithms. Held weekly office hours, reviewed exams and homework assignments, corrected homework submissions, and worked with other TAs to answer student questions on Piazza."
+                },
+                {
+                    name: "Data Scientist @ Mentra",
+                    sortId: "20201201",
+                    shortText: "Worked in a small data science team to explore natural language data, build classification models, and create algorithms to match candidates to jobs. Met with cofounders biweekly to discuss updates, findings, and project direction."
+                },
+                {
+                    name: "SDE 1 Intern @ Amazon",
                     sortId: "20210601",
-                    shortText: "This is a short snippet of text describing my roles and responsibilities at Amazon."
+                    shortText: "Designed and implemented internal tools, built on AWS, to support the operations of a confidential project. Analyzed different design options to arrive at the optimal choice, weighing simplicity and future extensibility. Learned to write code in Kotlin, and gained experience designing, implementing, and testing code within a large company."
                 }
             ]
         }

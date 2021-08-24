@@ -31,7 +31,6 @@ a {
 
 img {
   border: 1px solid black;
-  border-radius: 5px;
   object-fit: cover;
   margin-bottom: 1em;
 }

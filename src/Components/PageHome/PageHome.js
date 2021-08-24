@@ -11,21 +11,18 @@ class PageHome extends React.Component {
             socialLinks: [
                 {
                     name: "Email",
-                    text: "vaishant@gatech.edu",
                     url: "mailto:vaishant@gatech.edu"
                 },
                 {
-                    name: "Github",
-                    text: "vkameswaran",
+                    name: "GitHub",
                     url: "https://github.com/vkameswaran"
                 },
                 {
                     name: "LinkedIn",
-                    text: "vaishant",
                     url: "https://www.linkedin.com/in/vaishant/"
                 },
             ],
-            resumeURL: "https://drive.google.com/file/d/1w9_y3GKMfVbFCB9ub3xM55mFAoMhSxwK/view?usp=sharing",
+            // resumeURL: "https://drive.google.com/file/d/1w9_y3GKMfVbFCB9ub3xM55mFAoMhSxwK/view?usp=sharing",
         }
     }
 
@@ -39,7 +36,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="Vaishant Kameswaran is a second year computer science major at Georgia Tech interested in using technology to improve lives." />
+                    <meta name="description" content="Vaishant Kameswaran is a third year computer science major at Georgia Tech interested in using technology to improve lives." />
                 </Helmet>
                 <header className="navbar">
                     <div class="h1tag">#</div>
@@ -48,9 +45,11 @@ class PageHome extends React.Component {
                 </header>
                 <main>
                         <p>
-                            I'm a second year computer science major at Georgia Tech interested in using technology to
-                            improve lives. I'm currently working on assorted projects, and building up my portfolio.
-                            Feel free to reach out to me!
+                            I'm Vaishant, a third-year computer science student at the Georgia Institute of
+                            Technology. I'm focusing on studying artificial intelligence and the theory of
+                            computing, while also pursuing a minor in linguistics. At the moment, I'm looking
+                            for an internship for summer/fall 2022, where I can learn new skills, gain diverse
+                            experiences, and further develop my career.
                         </p>
 
                         <p id="socialLinks">
