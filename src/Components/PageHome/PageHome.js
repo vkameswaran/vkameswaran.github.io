@@ -22,7 +22,7 @@ class PageHome extends React.Component {
                     url: "https://www.linkedin.com/in/vaishant/"
                 },
             ],
-            // resumeURL: "https://drive.google.com/file/d/1w9_y3GKMfVbFCB9ub3xM55mFAoMhSxwK/view?usp=sharing",
+            resumeURL: "https://drive.google.com/file/d/13SegOJXTKJmbwlaqJgcsQmkQ_S4R2l6s/view?usp=sharing",
         }
     }
 
@@ -57,7 +57,7 @@ class PageHome extends React.Component {
                         </p>
 
                         {this.state.resumeURL
-                            && <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resumé</a>.</p>
+                            && <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resume</a>.</p>
                         }
                 </main>
             </div>
