@@ -48,7 +48,7 @@ class PageHome extends React.Component {
                             I'm Vaishant, a third-year computer science student at the Georgia Institute of
                             Technology. I'm focusing on studying artificial intelligence and the theory of
                             computing, while also pursuing a minor in linguistics. At the moment, I'm looking
-                            for an internship for summer/fall 2022, where I can learn new skills, gain diverse
+                            for an internship for fall 2022, where I can learn new skills, gain diverse
                             experiences, and further develop my career.
                         </p>
 

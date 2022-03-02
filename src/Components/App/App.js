@@ -125,7 +125,12 @@ class App extends React.Component {
                 {
                     name: "SDE 1 Intern @ Amazon",
                     sortId: "20210601",
-                    shortText: "Designed and implemented internal tools, built on AWS, to support the operations of a confidential project. Analyzed different design options to arrive at the optimal choice, weighing simplicity and future extensibility. Learned to write code in Kotlin, and gained experience designing, implementing, and testing code within a large company."
+                    shortText: "Designed and implemented internal tools, built on AWS, to support the operations of a confidential project. Analyzed different design options to arrive at the optimal choice, weighing simplicity and future extensibility. Learned to write code in Kotlin, and gained experience designing, implementing, and testing code within a large company. Received a return offer."
+                },
+                {
+                    name: "SWE Intern @ HubSpot",
+                    sortId: "20220601",
+                    shortText: "Incoming Software Engineer Intern at HubSpot for Summer 2022, based in Cambridge, MA."
                 }
             ]
         }
