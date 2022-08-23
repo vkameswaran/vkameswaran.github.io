@@ -130,7 +130,7 @@ class App extends React.Component {
                 {
                     name: "SWE Intern @ HubSpot",
                     sortId: "20220601",
-                    shortText: "Incoming Software Engineer Intern at HubSpot for Summer 2022, based in Cambridge, MA."
+                    shortText: "Worked on the team responsible for the availability and dynamic rendering of webpages hosted on HubSpot’s CMS. Learned about Kafka, Cloudflare Workers, Jinja templates, and the design of large-scale systems serving hundreds of millions of requests per day. Implemented new features and wrote tests in Java."
                 }
             ]
         }
