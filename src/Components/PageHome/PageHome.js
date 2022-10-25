@@ -36,7 +36,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="Vaishant Kameswaran is a third-year computer science major at Georgia Tech interested in using technology to improve lives." />
+                    <meta name="description" content="Vaishant Kameswaran is a fourth-year computer science major at Georgia Tech interested in using technology to improve lives." />
                 </Helmet>
                 <header className="navbar">
                     <div class="h1tag">#</div>
