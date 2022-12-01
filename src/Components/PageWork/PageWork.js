@@ -23,7 +23,7 @@ class PageWork extends React.Component {
                 <main>
                     <p>
                         I have experience in software engineering and data science roles, through various
-                        internships and projects over the years. In my next internships, I aim to gain
+                        internships and projects over the years. In my next positions, I aim to gain
                         exposure to new tools, industries, and technologies, to further broaden my
                         experiences and knowledge.
                     </p>
