@@ -22,7 +22,7 @@ class PageHome extends React.Component {
                     url: "https://www.linkedin.com/in/vaishant/"
                 },
             ],
-            resumeURL: "https://drive.google.com/file/d/17XRwjBTJHEAJgJ8g6cdxPpm8ucUb_gUC/view?usp=sharing",
+            resumeURL: "https://drive.google.com/file/d/1JPzr5QKHKoLl__RuM1sMnWDM_o9R1z1-/view?usp=sharing",
         }
     }
 
@@ -36,7 +36,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="Vaishant Kameswaran is a fourth-year computer science major at Georgia Tech interested in using technology to improve lives." />
+                    <meta name="description" content="Vaishant Kameswaran is a graduating computer scientist from Georgia Tech passionate about using technology to improve lives." />
                 </Helmet>
                 <header className="navbar">
                     <div class="h1tag">#</div>
@@ -45,10 +45,13 @@ class PageHome extends React.Component {
                 </header>
                 <main>
                         <p>
-                            I'm Vaishant, a fourth-year computer science student at the Georgia Institute of Technology.
-                            I'm focusing on studying artificial intelligence and the theory of computing, while also
-                            pursuing a minor in linguistics. I'm currently looking for a new grad position for 2023,
-                            where I can learn new skills, gain diverse experiences, and further develop my career.
+                            I'm Vaishant, a computer scientist graduating from the Georgia Institute of Technology. My
+                            degree focused on artificial intelligence and computing theory, and I've also been pursuing
+                            a minor in linguistics. I'm currently looking for an exciting, mission-driven project to
+                            work on after I graduate, where I can continue to learn, grow, and build my technological
+                            skillset.
+                            <br/><br/>
+                            If you're interested in chatting, or learning more about me, send me an email!
                         </p>
 
                         <p id="socialLinks">

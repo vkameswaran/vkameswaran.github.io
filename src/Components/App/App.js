@@ -120,7 +120,7 @@ class App extends React.Component {
                 {
                     name: "Data Scientist @ Mentra",
                     sortId: "20201201",
-                    shortText: "Worked in a small data science team to explore natural language data, build classification models, and create algorithms to match candidates to jobs. Met with cofounders biweekly to discuss updates, findings, and project direction."
+                    shortText: "Worked in a small data science team to explore natural language data, build classification models, and create algorithms to match neurodiverse candidates to jobs. Used Python packages such as Pandas, NumPy, and scikit-learn. Interviewed, recruited, and managed student volunteers on campus."
                 },
                 {
                     name: "SDE 1 Intern @ Amazon",
