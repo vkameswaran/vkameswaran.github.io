@@ -131,6 +131,11 @@ class App extends React.Component {
                     name: "SWE Intern @ HubSpot",
                     sortId: "20220601",
                     shortText: "Worked on the team responsible for the availability and dynamic rendering of webpages hosted on HubSpot’s CMS. Learned about Kafka, Cloudflare Workers, Jinja templates, and the design of large-scale systems serving hundreds of millions of requests per day. Implemented new features and wrote tests in Java."
+                },
+                {
+                    name: "Founding Engineer @ Tabnam",
+                    sortId: "20230501",
+                    shortText: "I'm currently building a startup to revolutionize the way people listen to their customers."
                 }
             ]
         }

@@ -22,9 +22,7 @@ class PageWork extends React.Component {
                 </header>
                 <main>
                     <p>
-                        I have experience in software engineering and data science from several internships and side
-                        projects. Next, I'm looking to work on an exciting, mission-driven project that challenges me
-                        and allows me to learn and expand my technological skillset.
+                        Building tech to change the world.
                     </p>
                     {this.props.work.map(workExperience => (
                         <div className="workInfo" key={workExperience.sortId}>

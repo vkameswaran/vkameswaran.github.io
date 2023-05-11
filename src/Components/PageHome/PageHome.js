@@ -10,6 +10,10 @@ class PageHome extends React.Component {
         this.state = {
             socialLinks: [
                 {
+                    name: "Tabnam",
+                    url: "https://www.tabnam.com/"
+                },
+                {
                     name: "Email",
                     url: "mailto:vaishant@gatech.edu"
                 },
@@ -36,7 +40,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="Vaishant Kameswaran is a graduating computer scientist from Georgia Tech passionate about using technology to improve lives." />
+                    <meta name="description" content="Vaishant Kameswaran is a computer scientist from Georgia Tech passionate about using technology to improve lives." />
                 </Helmet>
                 <header className="navbar">
                     <div class="h1tag">#</div>
@@ -45,11 +49,10 @@ class PageHome extends React.Component {
                 </header>
                 <main>
                         <p>
-                            I'm Vaishant, a computer scientist graduating from the Georgia Institute of Technology. My
-                            degree focused on artificial intelligence and computing theory, and I've also been pursuing
-                            a minor in linguistics. I'm currently looking for an exciting, mission-driven project to
-                            work on after I graduate, where I can continue to learn, grow, and build my technological
-                            skillset.
+                            I'm Vaishant, a computer scientist who recently graduated from the Georgia Institute of
+                            Technology. My degree focused on artificial intelligence and computing theory, with a minor
+                            in linguistics. I'm currently building a startup to revolutionize the way people listen to
+                            their customers.
                             <br/><br/>
                             If you're interested in chatting, or learning more about me, send me an email!
                         </p>
