@@ -10,23 +10,23 @@ class PageHome extends React.Component {
         this.state = {
             socialLinks: [
                 {
-                    name: "Tabnam",
-                    url: "https://www.tabnam.com/"
+                    name: "Onboard AI",
+                    url: "https://www.getonboard.dev/"
                 },
                 {
-                    name: "Email",
-                    url: "mailto:vaishant@gatech.edu"
+                    name: "LinkedIn",
+                    url: "https://www.linkedin.com/in/vaishant/"
                 },
                 {
                     name: "GitHub",
                     url: "https://github.com/vkameswaran"
                 },
                 {
-                    name: "LinkedIn",
-                    url: "https://www.linkedin.com/in/vaishant/"
+                    name: "Email",
+                    url: "mailto:vaishant@getonboard.dev"
                 },
             ],
-            resumeURL: "https://drive.google.com/file/d/1JPzr5QKHKoLl__RuM1sMnWDM_o9R1z1-/view?usp=sharing",
+            // resumeURL: "https://drive.google.com/file/d/1JPzr5QKHKoLl__RuM1sMnWDM_o9R1z1-/view?usp=sharing",
         }
     }
 
@@ -40,7 +40,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="Vaishant Kameswaran is a computer scientist from Georgia Tech passionate about using technology to improve lives." />
+                    <meta name="description" content="Vaishant Kameswaran is a computer scientist from Georgia Tech passionate about using technology to unlock human creativity." />
                 </Helmet>
                 <header className="navbar">
                     <div class="h1tag">#</div>
@@ -51,8 +51,8 @@ class PageHome extends React.Component {
                         <p>
                             I'm Vaishant, a computer scientist who recently graduated from the Georgia Institute of
                             Technology. My degree focused on artificial intelligence and computing theory, with a minor
-                            in linguistics. I'm currently building a startup to revolutionize the way people listen to
-                            their customers.
+                            in linguistics. I'm currently building a startup to simplify how people understand,
+                            navigate, integrate, and debug large codebases.
                             <br/><br/>
                             If you're interested in chatting, or learning more about me, send me an email!
                         </p>
