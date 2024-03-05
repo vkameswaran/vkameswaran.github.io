@@ -10,8 +10,8 @@ class PageHome extends React.Component {
         this.state = {
             socialLinks: [
                 {
-                    name: "Onboard AI",
-                    url: "https://www.getonboard.dev/"
+                    name: "Greptile",
+                    url: "https://www.greptile.com/"
                 },
                 {
                     name: "LinkedIn",
@@ -23,7 +23,7 @@ class PageHome extends React.Component {
                 },
                 {
                     name: "Email",
-                    url: "mailto:vaishant@getonboard.dev"
+                    url: "mailto:vaishant@greptile.com"
                 },
             ],
             // resumeURL: "https://drive.google.com/file/d/1JPzr5QKHKoLl__RuM1sMnWDM_o9R1z1-/view?usp=sharing",
