@@ -56,9 +56,9 @@ class PageHome extends React.Component {
                         Check us out!
                     </p>
 
-                    <p id="socialLinks">
+                    <div id="socialLinks">
                         {this.state.socialLinks.map(link => <span key={link.name}><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></span>)}
-                    </p>
+                    </div>
 
                     {this.state.resumeURL
                         && <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resume</a>.</p>
