@@ -40,7 +40,7 @@ class PageHome extends React.Component {
             <div className="home">
                 <Helmet>
                     <title>Vaishant Kameswaran</title>
-                    <meta name="description" content="Vaishant Kameswaran is a computer scientist from Georgia Tech passionate about using technology to unlock human creativity." />
+                    <meta name="description" content="Vaishant Kameswaran is co-founder and CTO at Greptile, where he builds AI that understands your codebase." />
                 </Helmet>
                 <header className="navbar">
                     <div class="h1tag">#</div>
@@ -48,22 +48,21 @@ class PageHome extends React.Component {
                     <NavigationBar pages={this.props.globalPages} pageTransitionFunction={this.props.pageTransitionFunction} />
                 </header>
                 <main>
-                        <p>
-                            I'm Vaishant, a computer scientist who recently graduated from the Georgia Institute of
-                            Technology. My degree focused on artificial intelligence and computing theory, with a minor
-                            in linguistics. I'm currently building a startup to simplify how people understand,
-                            navigate, integrate, and debug large codebases.
-                            <br/><br/>
-                            If you're interested in chatting, or learning more about me, send me an email!
-                        </p>
+                    <p>
+                        I'm Vaishant, co-founder and CTO at Greptile.
+                        <br />
+                        <br />
+                        We're building AI that understands your codebase, available as an API.
+                        Check us out!
+                    </p>
 
-                        <p id="socialLinks">
-                        {this.state.socialLinks.map(link => <span key={link.name}><a href={link.url} target="_blank"  rel="noopener noreferrer">{link.name}</a></span>)}
-                        </p>
+                    <p id="socialLinks">
+                        {this.state.socialLinks.map(link => <span key={link.name}><a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a></span>)}
+                    </p>
 
-                        {this.state.resumeURL
-                            && <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resume</a>.</p>
-                        }
+                    {this.state.resumeURL
+                        && <p>Check out <a href={this.state.resumeURL} target="_blank" rel="noopener noreferrer">my resume</a>.</p>
+                    }
                 </main>
             </div>
         );

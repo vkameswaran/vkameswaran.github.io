@@ -2,13 +2,29 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+/*
 .home #socialLinks {
     display: inline-block;
     width: 100%;
 }
 
 .home #socialLinks a {
+    margin-right: 1em;
+} */
+
+#socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between links as needed */
+}
+
+#socialLinks span {
+    flex: 1 1 auto; /* Allow spans to grow and shrink */
+    min-width: 100px; /* Adjust the minimum width as needed */
+}
+
+#socialLinks a {
+    text-decoration: none;
     margin-right: 1em;
 }
 
